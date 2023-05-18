@@ -20,7 +20,7 @@
 
             /* background-image: radial-gradient(red,white, green); */
 
-            background-image:linear-gradient(#e83f19, white, green);
+            background-image:linear-gradient(#e83f19 , white , green);
             
         }
 
@@ -34,28 +34,76 @@
             padding: 40px 0;
 
             /* to create a outline border  */
-            outline: 4px solid green;
-            outline-offset: 15px;
+            outline: 4px solid black;
+            outline-offset: 10px;
         }
 
-        h1{
+        .head1{
+            color: #e83f19;
             background-color: bisque;
-            border: 2px solid red;
+            border: 2px solid rgb(74, 19, 192);
             padding: 30px;
             margin: 70px;
         }
-        p{
+        .mypara{
             background-color: rgb(201, 32, 128);
             font-size: large;
-            width: 200px;
+            width: 
+            400px;
+        }
+        #myid{
+            color: blue;
+            text-align: center;
+            font-size: 40px;
+        }
+        table,td,tr{
+            border: 3px solid black;
+            border-collapse: collapse;
+            background-image: linear-gradient(green, red, blue);
+        }
+        ol{
+            list-style-image: url('/css/16x16.png');
+            width: 20px;
         }
     </style>
 </head>
 <body>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam libero omnis cumque atque voluptatem a perferendis veritatis voluptates laboriosam, optio hic repellendus accusamus temporibus quas soluta commodi provident eaque voluptatibus id blanditiis sit numquam.</p>
+    <p class="mypara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam libero omnis cumque atque voluptatem a perferendis veritatis voluptates laboriosam, optio hic repellendus accusamus temporibus quas soluta commodi provident eaque voluptatibus id blanditiis sit numquam.</p>
+
+    <p id="myid">I am very happy</p>
+
     
-    <h1>Jai Shree Ram</h1>
+    <h1 class="head1">Jai Shree Ram</h1>
     <img src="/css/Landscape-Color.jpg" alt="landscape">
+
+    <table>
+        <tr>
+            <td>name</td>
+            <td>age</td>
+            <td>add</td>
+            <td>id</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+        <tr>
+            <td>e</td>
+            <td>f</td>
+            <td>g</td>
+            <td>h</td>
+        </tr>
+    </table>
+
+    <ol>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+    </ol>
 </body>
 </html>
