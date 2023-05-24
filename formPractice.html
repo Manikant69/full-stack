@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing address</title>
+
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+
+        form {
+            font-size: large;
+            background-color: darkgray;
+            height: 500px;
+            margin: 30px;
+            padding: 40px;
+        }
+
+        .div1 {
+            width: 50%;
+            float: left;
+        }
+
+        .infoTag {
+            width: 100%;
+        }
+
+        .button {
+            text-align: center;
+            color: red;
+            font-size: large;
+            border: 1px solid red;
+            border-radius: 10px;
+            margin-left: 30px;
+        }
+
+        .para1 {
+            color: red;
+        }
+        table{
+            margin-top: 30px;
+        }
+        table tr td{
+            padding-right: 50px;
+            padding-bottom: 15px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>BILLING ADDRESS - BLUE NILE</h1>
+    <form>
+
+        <div class="first">
+            <p class="para1">*Please enter a valid zip code for your region.</p>
+            <strong calss="infTag">Would you like to create a Blue Nile Account and store this information ? </strong>
+            <input type="radio" id="info1" name="info" required>
+            <label for="info1">Yes</label>
+            <input type="radio" id="info2" name="info" required>
+            <label for="info2">No</label>
+        </div>
+
+
+        <div class="div1">
+            <table>
+                <tr>
+                    <td>
+                        <label for="firstname">*First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="firstname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastname">*Last Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="lastname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="company">Company</label>
+                    </td>
+                    <td>
+                        <input type="text" id="company">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phoneNo">*Phone</label>
+                    </td>
+                    <td>
+                        <input type="number" id="phoneNo" placeholder="enter your phone number" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">*Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" required>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="div2">
+            <table>
+                <tr>
+                    <td>
+                        <label for="address">*Address</label>
+                    </td>
+                    <td>
+                        <textarea name="address" id="address" cols="20" rows="1" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">*City</label>
+                    </td>
+                    <td>
+                        <input type="text" id="city" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="state" >*State</label>
+                    </td>
+                    <td>
+                        <select name="state" id="state" required>
+                            <option>Bihar</option>
+                            <option>UP</option>
+                            <option>Rajasthan</option>
+                            <option>Jharkhand</option>
+                            <option>Haryana</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="code" class="para1">*Zip Code</label>
+                    </td>
+                    <td>
+                        <input type="text" id="code" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="country">*Country</label>
+                    </td>
+                    <td>
+                        <select name="country" id="country" required>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>Nepal</option>
+                            <option>Japan</option>
+                            <option>ShriLanka</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span>*Address Type:</span>
+                    </td>
+                    <td>
+                        <input type="radio" id="home">
+                        <label for="home">Home</label>
+                        <input type="radio" id="business">
+                        <label for="business">Business</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br /> <br />
+        <div>
+            <strong>Are you shipping this order to your billing address?</strong>
+            <input type="radio" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no">
+            <label for="no">No</label>
+            <br><br>
+        </div>
+
+        <input type="reset" value="RESET" class="button">
+        <input type="submit" value="SUBMIT" class="button">
+
+
+    </form>
+</body>
+
+</html>

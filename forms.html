@@ -9,13 +9,15 @@
     <style>
         body{
             background-color: cornflowerblue;
+            padding-left: 300px;
+            font-size: large;
         }
 
         form{
             background-color: aquamarine;
             width: 500px;
-            padding: 30px;
-            text-align: justify;
+            padding: 15px 0px 15px 40px;
+
         }
         input{
             border-radius: 5px;
@@ -28,47 +30,70 @@
             width: 100px;
             text-align: center;
             padding-top: 2px;
+            margin-left: 20px;
+        }
 
+        .star{
+            color: red;
+            font-size: large;
         }
     </style>
 </head>
 <body>
     <form >
         <h1>Please fill the form:</h1>
-        <label for="fullname" >1. Full Name :- </label>
+        <label for="fullname" >1. Full Name<sup class="star">*</sup>: </label>
         <input type="text" id="fullname" placeholder="Enter Your Name" required><br/><br/>
 
-        <label for="fatherName">2. Father's Name</label>
+        <label for="fatherName">2. Father's Name:</label>
         <input type="text" id="fatherName" placeholder="Enter Your Father's Name"><br/><br/>
 
-        <label for="email">3. Email</label>
+        <label for="email">3. Email<sup class="star">*</sup>:</label>
         <input type="email" id="email"  placeholder="Enter Your Email" required><br><br/>
 
-        <label for="password">4. Password</label>
-        <input type="password" id="password" placeholder="Enter Your Password"><br/><br/>
+        <label for="password">4. Password<sup class="star">*</sup> :</label>
+        <input type="password" id="password" placeholder="Enter Your Password" required><br/><br/>
 
-        <p>5. Select Your Gender</p>
+        <p>5. Select Your Gender:</p>
         <input type="radio" id="male" name="gender" >
         <label for="male">Male</label>
         <input type="radio" id="female" name="gender">
         <label for="female">Female</label> <br/><br/>
 
-        <label for="file">Upload files:</label>
+        <label for="file">6. Upload files:</label>
         <input type="file" id="file" name="file" multiple>
         <br/> <br/>
 
-        <label for="DOB">6. D.O.B.</label>
-        <input type="datetime"  id="DOB" required min="2015-04-15" max="2022-05-23"><br><br/>
+        <label for="DOB">7. D.O.B.<sup class="star">*</sup> :</label>
+        <input type="date"  id="DOB" required min="2015-04-15" max="2022-05-30"><br><br/>
 
-        <label for="mobNo">7. Mobile Number</label>
+        <label for="mobNo">8. Mobile Number:</label>
         <input type="number" id="mobNo" min="1000000000" max="9999999999"><br><br/>
 
-        <label for="favColor">8. Enter Your Favorite Color</label>
+        <label for="favColor">9. Enter Your Favorite Color:</label>
         <input type="color"  id="favColor"> <br/><br/>
 
+        <fieldset id="subject">
+            <legend>10. Choose your skills:</legend>
+            <input type="checkbox" id="html" >
+            <label for="html">HTML</label><br/>
 
-        <input type="reset" value="reset" class="button"> <br><br/>
-        <input type="submit" value="submit" class="button"><br><br/>
+            <input type="checkbox" id="css" >
+            <label for="css">CSS</label><br/>
+
+            <input type="checkbox" id="js" >
+            <label for="js">JavaScript</label><br/>
+
+            <input type="checkbox" id="nodejs" >
+            <label for="nodejs">NodeJS</label><br/>
+        </fieldset>
+
+        <br/>
+        
+
+
+        <input type="reset" value="reset" class="button">
+        <input type="submit" value="submit" class="button">
 
     </form>
 </body>
